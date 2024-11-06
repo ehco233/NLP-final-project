@@ -62,7 +62,8 @@ if st.session_state['lstm_expanded']:
             toggle_state('data_preprocessing_expanded')
         if st.session_state['data_preprocessing_expanded']:
             st.markdown("- Remove special characters")
-            st.image('/Users/caro/Desktop/data_preprocessing.png')
+            # st.image('/Users/caro/Desktop/data_preprocessing.png')
+            st.image('images/data_preprocessing.png')
             st.markdown("- Stopwords Removal")
             st.markdown("- lemmatization")
 
@@ -71,20 +72,20 @@ if st.session_state['lstm_expanded']:
         if st.session_state['word_embedding_expanded']:
             st.markdown("##### Word2Vec")
             st.markdown("- Mode: Skip-gram")
-            st.image('/Users/caro/Desktop/word_embedding.png')
+            st.image('images/word_embedding.png')
 
         if st.button("Model Training"):
             toggle_state('model_training_expanded')
         if st.session_state['model_training_expanded']:
             st.markdown("##### Model: Bi-Directional LSTM")
             st.markdown('- Bi-Directional RNNs consist of two separate RNNs: one moving forward through the input sequence and the other moving backward.')
-            st.image('/Users/caro/Desktop/model_training.png')
+            st.image('images/model_training.png')
             st.markdown('- Loss Function: BinaryCrossentropy')
             st.markdown('- Metrics: accuracy')
             st.markdown('- Callback: EarlyStopping, ReduceLOnPlateau')
-            st.image('/Users/caro/Desktop/callback.png')
+            st.image('images/callback.png')
             st.markdown('- Model fit parameters: epochs, batch_size')
-            st.image('/Users/caro/Desktop/modelfit.png')
+            st.image('images/modelfit.png')
         
         if st.button("Results"):
             toggle_state('results_expanded')
@@ -93,8 +94,8 @@ if st.session_state['lstm_expanded']:
             st.markdown('- val_accuracy: <span style="color: red;">**0.8647**</span>', unsafe_allow_html=True)
             st.markdown('- Early stopping occurred at the 8th epoch, with the best result achieved at the <span style="color: red;">**5th**</span> epoch.', unsafe_allow_html=True)
             st.markdown('- ReduceLROnPlateau reducing learning rate to 4.999999873689376e-05 at 7th epoch')
-            st.image('/Users/caro/Desktop/output.png')
-            st.image('/Users/caro/Desktop/results.png')
+            st.image('images/output.png')
+            st.image('images/results.png')
             
 
 st.markdown("<hr style='border: 0.5px dashed green;'>", unsafe_allow_html=True)
