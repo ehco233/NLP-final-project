@@ -32,7 +32,7 @@ def toggle_state(state_name):
 
 st.title("Final Project - Sentiment Analysis")
 st.markdown("Group Clusters: A13")
-st.markdown("Group Members: SHI XULUN, ZHOU HANCHENG, LIU MIAO, HE JUNXIAN, YANG WANLI")
+st.markdown("Group Members: ")
 
 # briefly introduction
 
@@ -161,7 +161,6 @@ if st.session_state['lstm_expanded']:
                 </table>
                 """, unsafe_allow_html=True)
             
-            st.markdown("- Conclusion")
             st.markdown(
                         """
                         <style>
