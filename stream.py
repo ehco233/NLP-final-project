@@ -734,8 +734,10 @@ st.markdown(
                 """,
                 unsafe_allow_html=True
             )
-st.markdown("<div class='justified-text'>The result of the research shows that the traditional processing method(SVM) has a comparably more stable performance,  can reach a good score from three different datasets alike. But it takes a long time to process.</div>", unsafe_allow_html=True)
+st.markdown("<div class='justified-text'>The result of the research shows that the traditional processing method(SVM) has a comparably more stable performance, can reach a good score from three different datasets alike. But it takes a long time to process.</div>", unsafe_allow_html=True)
 st.markdown(' ')
-st.markdown("<div class='justified-text'>LSTM Scores highest on IMBD dataset, it reach a good balance between precision and recall. Llama has the most outstanding performance on IMDB dataset, achieving an accuracy of about 95%. but it's performance on twitter dataset is poorest.</div>", unsafe_allow_html=True)
+st.markdown("<div class='justified-text'>The Transformer method has the highest average precision among three datasets when compared with other techniques. but like others, it scores lower when dealing with the twitter dataset.</div>", unsafe_allow_html=True)
 st.markdown(' ')
-st.markdown("<div class='justified-text'>All Four models perform comparably lower on Twitter dataset, possibly due to the feature of the platform: twitter comments are usually short-term comments, contain different language, popular memes and jargons, which made it harder to recognize, which has a clear contrast to the reviews on IMDB and Google store.</div>", unsafe_allow_html=True)
+st.markdown("<div class='justified-text'>LSTM Scores highest on IMBD among all three datasets, the precision reaches 84% and the recall reaches 90%. it could achieve a good balance between precision and recall. Llama has the most outstanding performance on IMDB dataset, achieving an accuracy of about 95%. but it’s performance on twitter dataset is poorest. only reaches an accuracy of 54%.</div>", unsafe_allow_html=True)
+st.markdown(' ')
+st.markdown("<div class='justified-text'>All Four models perform comparably lower on Twitter dataset, possibly due to the feature of the platform: twitter comments are usually short-term comments, contain different language, popular memes and jargons, which made it harder to recognize, due to such features, the result shows a clear contrast to the reviews on IMDB and Google store.</div>", unsafe_allow_html=True)
