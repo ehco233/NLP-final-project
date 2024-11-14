@@ -311,8 +311,7 @@ if st.session_state['transformer_expanded']:
             </tr>
             </table>
             """, unsafe_allow_html=True)  
-        st.markdown("<div class='justified-text'>Overall, SVM is well-suited for both classification and regression tasks, particularly when dealing with high-dimensional data but limited sample sizes. In this case, the average runtime for the three datasets is approximately 1 hour. However, traditional machine learning algorithms tend to perform slower on larger datasets compared to deep learning models. Despite this, traditional machine learning models are simpler and more interpretable because they lack the complex structures and numerous layers found in deep neural networks.</div>", unsafe_allow_html=True)
-        
+                
         st.markdown("<div class='justified-text'>1. IMDB</div>", unsafe_allow_html=True)
         st.markdown("<div class='justified-text'>Accuracy: 0.8612 - IMDB has the highest accuracy rate among the three platforms.</div>", unsafe_allow_html=True)
         st.markdown("<div class='justified-text'>Recall: 0.842 - IMDB also has a high recall rate.</div>", unsafe_allow_html=True)
